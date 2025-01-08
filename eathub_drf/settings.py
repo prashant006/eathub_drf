@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y#2$0^xxy(c))fr+vm4smcs&#-2x=9vc*wkp)))p7&#gxw((^c
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = "users.EatHubAdmin"
 
 # Application definition
 
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'users'
 ]
 
 MIDDLEWARE = [
